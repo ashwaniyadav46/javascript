@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<canva id="mycanvas" width="200" height="100" style="border:1px solid #000000;">
+</canva>
+<script>
+    //step 1 access the canvas element
+    letcanvas=document.getElementById("mycanvas");
+    //step 2 get the context
+    let ctx=letcanvas.getContext("2d");
+    //step 3 draw on the canvas element
+    ctx.fillStyle="green";   
+    ctx.fillRect(10,10,150,80);
+    ctx.fillStyle="red";
+    ctx.fillText("Hello World",100,200);
+   </script> 
+</body>
+</html>
